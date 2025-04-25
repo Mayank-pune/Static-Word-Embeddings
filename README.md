@@ -71,3 +71,5 @@ For all models, increasing the embedding dimension tends to improve performance.
 
 ## Conclusion
 The results indicate that predictive models (**SkipGram** and **CBOW**) outperform the **SVD** approach in capturing word similarity, with **SkipGram** showing the best performance at moderate embedding sizes (**128–256**). **CBOW**, while initially trailing, improves with higher dimensions. **SVD**, despite its improvements, remains less effective in this metric.
+
+**NOTE:** Observed that **Skip-Gram outperformed CBOW on a rarer corpus**, as its use of individual context words preserved the influence of rare words, unlike CBOW’s averaging of contextual embeddings which diluted their contribution.
